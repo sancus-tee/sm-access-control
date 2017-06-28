@@ -12,7 +12,8 @@ In this paper we present a secure access control mechanism for extremely lightwe
 
 ## Source Code Overview
 
-The source code is organized as follows:
+Instructions for building and running the programs are available at <https://distrinet.cs.kuleuven.be/software/sancus/wistp2015/>. The source code is organized as follows:
+
 * __sfs__: contains the Sancus File System (SFS) implementation, a modified
 [Contiki File System (CFS)](https://github.com/contiki-os/contiki/tree/master/core/cfs) interface
 that provides SM-grained access control for a shared protected memory buffer or Contiki's Coffee file system for embedded peripheral flash driver.
