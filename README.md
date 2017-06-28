@@ -1,6 +1,6 @@
 # Secure SM-grained Resource Sharing
 
-This repository contains the source code accompanying the paper "Secure Resource Sharing for Embedded Protected Module Architectures" which appeared in the 2015 WISTP International Conference on Information Security Theory and Practice. A copy of the paper is available at <https://lirias.kuleuven.be/bitstream/123456789/513666/1/paper.pdf>.
+This repository contains the source code accompanying the paper "Secure Resource Sharing for Embedded Protected Module Architectures" which appeared in the 2015 WISTP International Conference on Information Security Theory and Practice. [Get the paper.](https://lirias.kuleuven.be/bitstream/123456789/513666/1/paper.pdf)
 
 > Van Bulck J., Noorman J., Mühlberg T., Piessens F. Secure resource sharing for embedded protected module architectures. In 9th WISTP International Conference on Information Security Theory and Practice (WISTP 2015), LNCS: Vol. 9311, pp. 71–87, Springer, 2015.
 
