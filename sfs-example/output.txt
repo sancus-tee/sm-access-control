@@ -1,0 +1,29 @@
+
+---------------
+main started
+[clientA] Hi, I have id 2 and was called from 0
+[clientA] creating the file and writing the data
+[clientA] assigning read-only permissions for clientB and dumping ACLs
+	----------------------------------------------------------------
+[1m	FILE[0m with name 'a' at 0x55e; open_count = 1; next_ptr = 0
+[1m		PERM[0m (2, 0xff) at 0x588; file_ptr = 0x55e; next_ptr = 0x590
+[1m		PERM[0m (3, 0x01) at 0x590; file_ptr = 0x55e; next_ptr = 0
+	----------------------------------------------------------------
+	(0, 0x588); (1, 0x0); (2, 0x0); (3, 0x0); (4, 0x0); (5, 0x0); (6, 0x0); (7, 0x0); 
+[clientB] Hi, I have id 3 and was called from 2
+[clientB] attempting to open the file and read the data
+[clientB] the chars are: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+[clientA] revoking permissions for clientB and dumping ACLs
+[0;32m	[sfs] [0m[0;33mWARNING[0m::removing ACL entry at address 0x590
+	----------------------------------------------------------------
+[1m	FILE[0m with name 'a' at 0x55e; open_count = 1; next_ptr = 0
+[1m		PERM[0m (2, 0xff) at 0x588; file_ptr = 0x55e; next_ptr = 0
+	----------------------------------------------------------------
+	(0, 0x588); (1, 0x0); (2, 0x0); (3, 0x0); (4, 0x0); (5, 0x0); (6, 0x0); (7, 0x0); 
+[clientB] Hi, I have id 3 and was called from 2
+[clientB] attempting to open the file and read the data
+[1;31m[0;32m	[sfs] [0m[1;31mERROR::found no permission entry for SM 3
+[0m[clientB] access to the file has been denied
+[clientA] closing and removing the logical file
+[main] exiting
+-----------------
